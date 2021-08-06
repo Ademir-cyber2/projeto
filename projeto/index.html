@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Busca IMC</title>
+</head>
+<body>
+   <header>
+       <h1 class="titulo">Busca IMC</h1>
+   </header>
+   <main>
+       <section>
+           <form class="formulario">
+                <div>
+                   <label for ="nome">Nome:</label>
+                   <input id="nome" required="required" name="nome" type="text" placeholder="Digite o nome" class="linha-formulario">
+                </div>
+                <div class="grupo">
+                   <label for="peso">Peso:</label>
+                   <input id="peso" required="required" name="peso" type="text" placeholder="digite o peso do seu paciente" class="linha-formulario">
+                </div>
+                <div class="grupo">
+                   <label for ="altura">Altura:</label>
+                   <input id="altura" required="required" name="altura" type="text" placeholder="Digite a altura" class="linha-formulario">
+                </div>
+                <button id="submit">Adicionar</button>
+           </form>
+       </section>
+       <section>
+           <table class="tabela">
+               <thead>
+                   <tr>
+                       <th>Resultado</th>
+                       <th>Diagnóstico</th>
+                   </tr>
+               </thead>
+               <tbody>
+                   <tr>
+                       <td class="resultado"></td>
+                       <td class="diagnostico"></td>
+                   </tr>
+               </tbody>
+           </table>
+       </section>
+   </main>
+   <script src="js/calcula.js"></script>
+</html>
